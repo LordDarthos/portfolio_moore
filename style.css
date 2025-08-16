@@ -242,9 +242,7 @@ section {
     min-height: fit-content;
 }
 
-.section-container {
-    display: flex;
-}
+
 
 /*PROFILE SECTION*/
 
@@ -254,8 +252,7 @@ section {
     justify-content: center;
     gap: 10rem;
     height: 100vh;
-    background-color: #0a0a0a;
-    background-image: url('./Assets/mypic.jpg');
+    background-image: url('./Assets02/contacto/fondo.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -393,7 +390,7 @@ btn-color-2:hover {
 #about {
     position: relative;
     padding-top: 3rem;
-    height: 100vh;
+    height: 35vh;
     background-color: #222222;
     background-image: url('./Assets/black.jpg');
     background-size: cover;
@@ -430,7 +427,7 @@ btn-color-2:hover {
 }
 
 .about-details-container {
-
+    margin-top: 30px;
     justify-content: center;
     flex-direction: column;
     
@@ -479,7 +476,6 @@ btn-color-2:hover {
     font-weight: 300;
     color: #d2cdc1;
     padding-left: 2rem;
-    padding-right: 11rem;
     text-align: left;
     line-height: 1.5rem;
 
@@ -489,10 +485,10 @@ btn-color-2:hover {
 
 #skills {
     position: relative;
-    background-image: url(./Assets/bgpic.jpg);
+    background-image: url('./Assets02/contacto/fondo.png');
     padding: 5rem 0;
     height: 100vh;
-    background-color: #0c0c0c;
+    /*background-color: #0c0c0c;*/
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
@@ -605,8 +601,12 @@ article h3{
 .trabajos02 {
 text-align: center;
 }
+
+.trabajos02 .title {
+    margin-top: 20px;
+}
 .logosImg02 {
-    width: 100%;
+    width: 80%;
 }
 
 .work {
@@ -678,7 +678,7 @@ text-align: center;
 /* CONTACT */
 
 #contact {
-    height: 50vh;
+    height:35vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -765,6 +765,18 @@ footer .nav-links-container2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px){
+    .nav-links-container2 .nav-links li {
+        width: 100%;
+    }
+}
+
+.logo02 {
+    margin-top: 20px;
 }
 
 footer p {
