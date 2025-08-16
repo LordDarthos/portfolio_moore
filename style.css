@@ -269,9 +269,7 @@ section {
 .home-pic {
     display: flex;
     height: 400px;
-    width: 400px;
     margin: 9.4rem 0;
-    border-radius: 50%;
     box-shadow: 0 0 25px rgba(0, 0, 0,0.4);
 }
 
@@ -343,11 +341,11 @@ section {
 }
 
 .btn {
-    font-weight: 600;
     transition: all 300ms ease;
     padding: 1rem;
-    width: 8rem;
-    border-radius: 2rem;
+    width: 12rem;
+    font-size: 24px;
+    border-radius: 5px;
     margin-top: 1.4rem;   
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
     text-shadow: 0 0 20px rgba(0,0,0, 0.8);
@@ -428,10 +426,11 @@ btn-color-2:hover {
     gap: 4rem;
     margin-bottom: 2rem;
     padding-left: 2rem;
-    padding-right: 11rem;
+    padding-right: 2rem;
 }
 
 .about-details-container {
+
     justify-content: center;
     flex-direction: column;
     
@@ -444,6 +443,7 @@ btn-color-2:hover {
 
 
 .details-container {
+    width: 50%;
     padding-bottom: 0.8rem;
     flex: 1;
     background: none;
@@ -590,10 +590,23 @@ article h3{
 }
 
 .work-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-    grid-gap: 40px;
-    margin: 40px 5rem;
+    width: 100%;
+}
+
+.work-list .trabajos01 {
+    width: 100%;
+    text-align: center;
+}
+
+.trabajos01 img {
+    width: 90%;
+}
+
+.trabajos02 {
+text-align: center;
+}
+.logosImg02 {
+    width: 100%;
 }
 
 .work {
@@ -673,17 +686,14 @@ article h3{
     padding-bottom: 2rem;
 }
 
-.contact-info-upper-container {
-    display: inline-block;
-    justify-content: center;
-    border-radius: 4rem;
-    border: #d2cdc1 0.1rem solid;
-    margin-top: 2.6rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1rem;
-    padding: 0.4rem;
-    transition: all 0.3s ease;
+
+
+.contact-info-upper-container div img {
+    width: 100%;
+}
+
+.contact-info-upper-container div {
+    width: 100%;
 }
 
 .contact-info-upper-container:hover {
@@ -790,3 +800,23 @@ footer p {
 #all-projects .title{
     font-weight: 600;
 }
+
+
+.section__profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+    .section__profile > .prof_div {
+    width: 100%!important;
+}
+}
+
+.section__profile > .prof_div {
+    width: 50%;
+    text-align: center;
+}
+
